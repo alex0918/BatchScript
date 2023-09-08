@@ -7,7 +7,6 @@ set logfile=\\ServerName\HealthCheckReport\ADHealth.txt
 REM Finds system boot time
 echo System Boot Time ------------------------------------------------------------- >> %logfile%
 systeminfo | find "System Boot Time:" >> %logfile%
-systeminfo | find "System Up Time:" >> %logfile%
 echo. >> %logfile%
 echo. >> %logfile%
 REM Displays all current TCP/IP network configuration values
